@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-width: 100vw;
+  height: 100vh;
+  background-color: rgba(18, 23, 37, 0.8);
+  font-family: "Chivo", sans-serif;
+  text-align: center;
+  background-image: url(./assets/mobile/image-host.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 24px;
+  background-blend-mode: multiply;
+}
+.rederror {
+  display: none;
+  color: red;
+}
+.container {
+  height: 100%;
+}
+.logo {
+  margin-top: 62px;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.offer {
+  font-weight: 400;
+  font-size: 27px;
+  color: #54e6af;
+  line-height: 38px;
+  margin-top: 67px;
+}
+.white {
+  color: #ffffff;
+  font-size: 26px;
+}
+.instruction {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #c2cbe5;
+  margin-top: 16px;
+}
+.supports {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 39px;
+  align-items: center;
+}
+.spotify {
+  width: 56px;
+  height: 17px;
+}
+.apple {
+  width: 45px;
+  height: 17px;
+}
+.google {
+  width: 73px;
+  height: 11px;
+}
+.pocket {
+  width: 77px;
+  height: 15px;
+}
+.press {
+  width: 327px;
+  height: 56px;
+  background-color: rgba(44, 52, 75, 1);
+  color: #ffffff;
+  opacity: 0.5;
+  border-radius: 28px;
+  border: none;
+  text-align: left;
+  padding-left: 32px;
+  margin-top: 53px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.textbox {
+  width: 326px;
+  height: 46px;
+  background-color: #54e6af;
+  border-radius: 28px;
+  color: #121725;
+  text-align: center;
+  border: none;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets/tablet/image-host.jpg);
+    background-size: 491px 767px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 0%;
+    background-color: rgba(18, 23, 37, 1);
+    background-blend-mode: lighten;
+    padding: 0 39px;
+  }
+  .logo {
+    margin-top: 50px;
+    display: flex;
+  }
+  .middle-section {
+    width: 635px;
+    height: 509px;
+    background-color: rgba(18, 23, 37, 1);
+    margin-top: 153px;
+  }
+  .titles {
+    text-align: left;
+  }
+  .offer {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .white {
+    font-size: 48px;
+  }
+  .instruction {
+    font-size: 18px;
+    margin-top: 31px;
+    width: 445px;
+    height: 84px;
+    line-height: 28px;
+  }
+  .supports {
+    margin-top: 60px;
+    padding-right: 99px;
+  }
+
+  .spotify {
+    width: 96px;
+    height: 29px;
+  }
+  .apple {
+    width: 78px;
+    height: 29px;
+  }
+  .google {
+    width: 125px;
+    height: 18px;
+  }
+  .pocket {
+    width: 129px;
+    height: 26px;
+  }
+  .press {
+    width: 427px;
+    height: fit-content;
+    margin-top: 0px;
+    outline: none;
+  }
+  .textbox {
+    min-width: 162px;
+    height: 48px;
+    margin-top: 0px;
+  }
+
+  .pattern {
+    display: flex;
+  }
+  .patterns {
+    margin-top: 150px;
+  }
+  .inputbox {
+    width: 430px;
+    height: 56px;
+    margin-top: 45px;
+  }
+  .box {
+    width: 60%;
+    background-color: rgba(44, 52, 75, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 28px;
+    height: 56px;
+  }
+
+  .textbox {
+    width: 162px;
+    height: 46px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-size: 962px 640px;
+    background-position: right 178px;
+    padding: 0 165px;
+  }
+  .middle-section {
+    width: 723px;
+    height: 509px;
+    margin-top: 204px;
+  }
+  .supports {
+    margin-top: 65px;
+    padding-right: 187px;
+  }
+  .offer {
+    line-height: 62px;
+    font-size: 52px;
+  }
+  .instruction {
+    margin-top: 24px;
+  }
+  .inputbox {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .patterns {
+    margin-top: -150px;
+    position: absolute;
+    bottom: 14%;
+    right: 0;
+  }
+  .textbox:hover {
+    cursor: pointer;
+    background-color: rgba(179, 255, 226, 1);
+  }
+  .rederror {
+    text-align: left;
+    margin-top: 9px;
+    color: rgba(251, 62, 62, 1);
+    padding-left: 32px;
+  }
+}
